@@ -100,6 +100,9 @@
             // 
             // dgvParts
             // 
+            this.dgvParts.AllowUserToAddRows = false;
+            this.dgvParts.AllowUserToDeleteRows = false;
+            this.dgvParts.AllowUserToResizeRows = false;
             this.dgvParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvParts.Location = new System.Drawing.Point(17, 134);
             this.dgvParts.MultiSelect = false;
@@ -153,6 +156,7 @@
             this.btnRemoveFasta.TabIndex = 12;
             this.btnRemoveFasta.Text = "Remove";
             this.btnRemoveFasta.UseVisualStyleBackColor = true;
+            this.btnRemoveFasta.Click += new System.EventHandler(this.btnRemoveFasta_Click);
             // 
             // btnTestPart
             // 

@@ -203,6 +203,20 @@ namespace HybridizationTool
             Cursor.Current = Cursors.Default;
 
         }
+
+        private void btnRemoveFasta_Click(object sender, EventArgs e)
+        { 
+            if (dtParts.Rows.Count > 0)
+            {
+                if(dgvParts.SelectedRows.Count > 0)
+                {
+                    int index = dgvParts.SelectedRows[0].Index;
+                    string partName = dtParts.Rows[index]["Part Name"].ToString();
+                    dtParts.Rows[index].Delete();
+                    dicPartDetail.Remove(partName);
+                }
+            }
+        }
     }
 
 
