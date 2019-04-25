@@ -18,6 +18,6 @@ The program RNAfold can be found in the ViennaRNA Package (Download here: https:
 + Blastn also requires you to have downloaded a database from the NCBI ftp site (Download here: ftp://ftp.ncbi.nlm.nih.gov/blast/db/).
 + The target sequences are fed into the program using files in the ".fasta" format.
 + Each target sequence is tested individually using the "Test Part" button on the bottom right corner of the program window.
-+ When the tests have been done, The program will report the status of each sequence, whether or not it passes or fails the test.
++ When the tests have been done, The program will report the status of each part, whether or not it passes or fails the test.
 + In order to pass the blastn test, ther must not be any matches with an e-value of 1e-3 or lower, e-values higher than this are considered insignificant.
 + In order to pass the RNAfold test, no secondary structures must have been found.
